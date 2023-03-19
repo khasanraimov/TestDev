@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56073E3929C742C600BA94BC /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56073E3829C742C600BA94BC /* Auth.storyboard */; };
 		F975E8DB29C71617002FA566 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975E8DA29C71617002FA566 /* UserTableViewCell.swift */; };
 		F975E8E129C71C5E002FA566 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F975E8E029C71C5E002FA566 /* HeaderView.xib */; };
 		F975E8E629C71C94002FA566 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975E8E529C71C94002FA566 /* HeaderView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56073E3829C742C600BA94BC /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		F975E8DA29C71617002FA566 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		F975E8E029C71C5E002FA566 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		F975E8E529C71C94002FA566 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -98,9 +100,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56073E3729C7408C00BA94BC /* Autho */ = {
+			isa = PBXGroup;
+			children = (
+				56073E3829C742C600BA94BC /* Auth.storyboard */,
+			);
+			path = Autho;
+			sourceTree = "<group>";
+		};
 		F975E8D629C70ED2002FA566 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				56073E3729C7408C00BA94BC /* Autho */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -344,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56073E3929C742C600BA94BC /* Auth.storyboard in Resources */,
 				F9DFFFF629BFBF8E00D338ED /* Tabbar.storyboard in Resources */,
 				F975E8E129C71C5E002FA566 /* HeaderView.xib in Resources */,
 				F9DFFFC929BFA30F00D338ED /* LaunchScreen.storyboard in Resources */,

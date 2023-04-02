@@ -11,6 +11,7 @@
 		F975E8DB29C71617002FA566 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975E8DA29C71617002FA566 /* UserTableViewCell.swift */; };
 		F975E8E129C71C5E002FA566 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F975E8E029C71C5E002FA566 /* HeaderView.xib */; };
 		F975E8E629C71C94002FA566 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975E8E529C71C94002FA566 /* HeaderView.swift */; };
+		F975E8EE29C790EA002FA566 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975E8ED29C790EA002FA566 /* LoginViewController.swift */; };
 		F9DF000829BFD50400D338ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF000729BFD50400D338ED /* HomeViewController.swift */; };
 		F9DF000D29BFD51200D338ED /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF000C29BFD51200D338ED /* SearchViewController.swift */; };
 		F9DF001229BFD52400D338ED /* NewCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF001129BFD52400D338ED /* NewCreateViewController.swift */; };
@@ -51,6 +52,7 @@
 		F975E8DA29C71617002FA566 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		F975E8E029C71C5E002FA566 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		F975E8E529C71C94002FA566 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F975E8ED29C790EA002FA566 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F9DF000729BFD50400D338ED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F9DF000C29BFD51200D338ED /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F9DF001129BFD52400D338ED /* NewCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCreateViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				56073E3829C742C600BA94BC /* Auth.storyboard */,
+				F975E8ED29C790EA002FA566 /* LoginViewController.swift */,
 			);
 			path = Autho;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				F9DF001229BFD52400D338ED /* NewCreateViewController.swift in Sources */,
 				F9DF001729BFD53300D338ED /* BookViewController.swift in Sources */,
 				F9DFFFBC29BFA2F100D338ED /* SceneDelegate.swift in Sources */,
+				F975E8EE29C790EA002FA566 /* LoginViewController.swift in Sources */,
 				F9DF000829BFD50400D338ED /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

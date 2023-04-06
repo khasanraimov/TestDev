@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="FanFicApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="FanFicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +29,7 @@
                                 <color key="selectedSegmentTintColor" red="0.38754630089999997" green="0.1660708487" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="loginOutLet:" destination="0FR-g8-ABJ" eventType="valueChanged" id="6cE-Tk-x3X"/>
+                                    <action selector="segmentAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="f9z-s2-hdg"/>
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9N2-gn-bVG">
@@ -58,7 +59,6 @@
                             <constraint firstItem="pYR-TK-Dm4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="8X8-vs-8N6"/>
                             <constraint firstItem="pYR-TK-Dm4" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="9UF-fW-OU9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0dN-cZ-DFo" secondAttribute="trailing" constant="20" id="9d0-Iq-VHV"/>
-                            <constraint firstItem="0dN-cZ-DFo" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.903382" id="BcO-1s-iJa"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0dN-cZ-DFo" secondAttribute="trailing" constant="20" id="G1J-Pj-sve"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9N2-gn-bVG" secondAttribute="trailing" constant="16" id="G5z-bh-RQP"/>
                             <constraint firstItem="pYR-TK-Dm4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="K6U-bH-xTZ"/>
@@ -77,6 +77,7 @@
                             <constraint firstItem="0dN-cZ-DFo" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0345982" id="xLR-NB-buf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="OEM-8W-Uxe"/>
                     <connections>
                         <outlet property="loginSegmentView" destination="9N2-gn-bVG" id="p5Y-Y3-o1X"/>
                         <outlet property="registerSegmentView" destination="gnH-Qh-mKk" id="2bv-qN-HtZ"/>
@@ -86,7 +87,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="0FR-g8-ABJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="180" y="-163"/>
+            <point key="canvasLocation" x="2000.0000000000002" y="-163.39285714285714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eSr-Jc-R9U">
@@ -95,13 +96,22 @@
                     <view key="view" contentMode="scaleToFill" id="LOH-k2-fbE">
                         <rect key="frame" x="0.0" y="0.0" width="382" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login Segment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEC-LF-2eD">
+                                <rect key="frame" x="170" y="87" width="115" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ohg-uO-hRY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsV-mV-MaY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="-327"/>
+            <point key="canvasLocation" x="2802.898550724638" y="-327.45535714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ASe-68-Hdo">
@@ -110,13 +120,22 @@
                     <view key="view" contentMode="scaleToFill" id="Q7p-HT-Pzt">
                         <rect key="frame" x="0.0" y="0.0" width="382" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register Segment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylu-r6-2Ty">
+                                <rect key="frame" x="170" y="92" width="136" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Yx1-FO-9d8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJM-3p-i2u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="73"/>
+            <point key="canvasLocation" x="2802.898550724638" y="72.991071428571431"/>
         </scene>
     </scenes>
     <resources>

@@ -17,9 +17,25 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.bringSubviewToFront(loginSegmentView)
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func segmentAction(_ sender: UISegmentedControl) {
+        
+        switch sender.selectedSegmentIndex {
+        case 0:
+            self.view.bringSubviewToFront(loginSegmentView)
+        case 1:
+            self.view.bringSubviewToFront(registerSegmentView)
+        default:
+            break
+        }
+        
+    }
+
     
 
     /*

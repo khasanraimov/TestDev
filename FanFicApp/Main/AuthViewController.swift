@@ -1,13 +1,6 @@
-//
-//  LoginViewController.swift
-//  FanFicApp
-//
-//  Created by khasan on 19.03.2023.
-//
-
 import UIKit
 
-class LoginViewController: UIViewController {
+class AuthViewController: UIViewController {
 
     @IBOutlet weak var segmentOutlet: UISegmentedControl!
     
@@ -17,6 +10,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AuthViewController")
+        self.navigationController?.pushViewController(vc, animated: false)
         
         self.view.bringSubviewToFront(loginSegmentView)
 
